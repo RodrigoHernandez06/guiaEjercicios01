@@ -3,11 +3,12 @@ body, html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, #03045E, #0077B6, #90E0EF, #CAF0F8);
+    background-image: linear-gradient(to bottom, #03045E,85%, #0077B6);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #caja {
@@ -19,10 +20,29 @@ body {
     gap: 10%;
 }
 
+#boton {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #90E0EF;
+    color: #03045E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .card {
     width: 200px;
     height: 350px;
     background-color: #0077B6;
+    justify-content: center;
     color: #CAF0F8;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -31,5 +51,12 @@ body {
     align-items: center;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 

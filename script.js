@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <ul>
             ${plan.caracteristicas.map(c => `<li>${c}</li>`).join("")}
           </ul>
-          <button>Seleccionar</button>
+          <button id="boton">Seleccionar</button>
         </div>
       `).join("");
     };
