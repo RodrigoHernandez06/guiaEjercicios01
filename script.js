@@ -34,4 +34,22 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       }
     ];
+
+    const contenedor = document.getElementById("caja");
+
+    const renderizarPlanes = () => {
+      contenedor.innerHTML = planes.map(plan => `
+        <div class="card">
+          <h2>${plan.nombre}</h2>
+          <p class="price">${plan.precio}</p>
+          <p class="slogan">${plan.slogan}</p>
+          <ul>
+            ${plan.caracteristicas.map(c => `<li>${c}</li>`).join("")}
+          </ul>
+          <button>Seleccionar</button>
+        </div>
+      `).join("");
+    };
+
+    renderizarPlanes();
 });
