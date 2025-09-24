@@ -30,6 +30,8 @@ body {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    position:relative;
+    bottom: 25px;
 }
 
 .contenedor {
@@ -39,18 +41,17 @@ body {
 }
 
 .card {
-    width: 250px;
+    width: 275px;
     height: 450px;
     background-color: #090D21;
     justify-content: center;
     color: white;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding-bottom: 20px;
     text-align: center;
     overflow: hidden;
 }
@@ -61,7 +62,7 @@ body {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     .title {
-        background-color: #131A44;
+        background-color: #162762;
     }
 }
 
@@ -81,7 +82,7 @@ body {
 }
 
 .body {
-    width: auto;
+    width: inherit;
     height: inherit;
     background-color: inherit;
     justify-content: center;
@@ -92,22 +93,52 @@ body {
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 0 10px;
+    text-align: left;
+}
+
+.card:hover .body{
+    background-color: #13173E;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .name {
     border-style: solid;
-    border-color: white;
+    border-color: #4DBCC8;
     border-width: 1px;
     border-radius: 20px;
     padding: 10px;
     font-size: large;
     font-weight: bold;
+    color: #4DBCC8;
 }
 
 .list {
-    padding: 10px 5px;
+    padding: 10px 10px;
+    color: white;
+
 }
+
+ul li::marker {
+    color: #4DBCC8;
+    size: 15px;
+}
+
 
 .slogan {
     font-weight: lighter;
+    color: #7B8DA5;
+}
+
+.mes{
+    vertical-align: super;
+    font-size: small;
+    color: #7B8DA5;
+}
+
+h1{
+    display: inline;
+}
+
+p{
+    display: inline;
 }

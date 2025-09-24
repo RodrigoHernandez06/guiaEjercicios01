@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const planes = [
     {
       nombre: "BASICO",
-      precio: "$9.99 / mes",
+      precio: "$9.99",
       slogan: "Ideal para empezar",
       caracteristicas: [
         "1 usuario",
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       nombre: "INTERMEDIO",
-      precio: "$19.99 / mes",
+      precio: "$19.99",
       slogan: "Perfecto para equipos pequeños",
       caracteristicas: [
         "Hasta 5 usuarios",
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       nombre: "AVANZADO",
-      precio: "$29.99 / mes",
+      precio: "$29.99 ",
       slogan: "Para empresas y profesionales",
       caracteristicas: [
         "Usuarios ilimitados",
@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="card">
         <div class="title">
           <p class="name">${plan.nombre}</p>
-          <h1 class="price">${plan.precio}</h1>
+          <div>
+          <h1 class="price">${plan.precio}</h1> <p class="mes">/mes</p>
+          </div>
           <p class="slogan">${plan.slogan}</p>
         </div>
         <div class="body">
