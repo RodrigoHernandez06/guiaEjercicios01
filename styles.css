@@ -3,7 +3,7 @@ body, html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, #03045E,85%, #0077B6);
+    background-color: black;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,8 +23,8 @@ body {
 #boton {
     margin-top: auto;
     padding: 10px 20px;
-    background-color: #90E0EF;
-    color: #03045E;
+    background-color: #00B4D8;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -35,22 +35,24 @@ body {
 .contenedor {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 .card {
-    width: 200px;
-    height: 350px;
-    background-color: #0077B6;
+    width: 250px;
+    height: 450px;
+    background-color: #090D21;
     justify-content: center;
-    color: #CAF0F8;
+    color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
 }
 
 
@@ -58,5 +60,54 @@ body {
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    .title {
+        background-color: #131A44;
+    }
 }
 
+
+.title {
+    width: inherit;
+    height:inherit;
+    background-color: inherit;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0 10px;
+}
+
+.body {
+    width: auto;
+    height: inherit;
+    background-color: inherit;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0 10px;
+}
+
+.name {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.list {
+    padding: 10px 5px;
+}
+
+.slogan {
+    font-weight: lighter;
+}
